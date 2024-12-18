@@ -6,7 +6,16 @@ import com.amrazik.tennisclub.data.model.User;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * Data Transfer Object (DTO) for reservation details.
+ *
+ * This class is used to provide reservation information to clients.
+ * It includes details such as the reservation ID, associated court and user,
+ * start and end times, whether the reservation is for a doubles match,
+ * and the total price for the reservation.
+ */
 public class ReservationResponseDTO {
+
     private Long id;
     private Court court;
     private User user;

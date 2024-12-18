@@ -1,7 +1,11 @@
 package com.amrazik.tennisclub.data.DTO;
 
-
+/**
+ * Data Transfer Object (DTO) for creating or updating a Court entity.
+ * Used to transfer court-related data between the client and server layers.
+ */
 public class CourtCreateDTO {
+
     private Long id;
     private String name;
     private Long surfaceId;

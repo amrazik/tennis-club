@@ -5,6 +5,16 @@ import org.hibernate.annotations.SQLRestriction;
 
 import java.math.BigDecimal;
 
+/**
+ * Represents a surface type for a tennis court in the system.
+ *
+ * The `Surface` class is mapped to a database table representing different types of surfaces available for tennis courts.
+ * Each surface has a unique name, a price per minute for the use of a court with that surface, and a flag to indicate
+ * if the surface has been deleted (soft deletion). The class implements the `BaseEntity` interface to ensure it has
+ * an ID and deletion status.
+ *
+ * The `@SQLRestriction` annotation ensures that only non-deleted surfaces are retrieved from the database.
+ */
 @Entity
 @SQLRestriction("deleted = false")
 public class Surface implements BaseEntity{

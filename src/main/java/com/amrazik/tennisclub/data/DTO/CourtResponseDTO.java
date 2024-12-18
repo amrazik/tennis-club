@@ -1,11 +1,14 @@
 package com.amrazik.tennisclub.data.DTO;
 
-
+/**
+ * Data Transfer Object (DTO) for representing a Court entity in responses.
+ * Used to transfer court-related data from the server to the client layer.
+ */
 public class CourtResponseDTO {
+
     private Long id;
     private String name;
     private SurfaceDTO surface;
-
 
     public Long getId() {
         return id;

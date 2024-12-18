@@ -2,6 +2,13 @@ package com.amrazik.tennisclub.data.DTO;
 
 import java.math.BigDecimal;
 
+/**
+ * Data Transfer Object (DTO) for surface details.
+ *
+ * This class is used to transfer data related to court surfaces
+ * between different layers of the application. It includes the
+ * surface ID, name, and the price per minute for using the surface.
+ */
 public class SurfaceDTO {
     private Long id;
     private String name;

@@ -6,6 +6,18 @@ import org.hibernate.annotations.SQLRestriction;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+
+/**
+ * Represents a reservation for a tennis court in the system.
+ *
+ * The `Reservation` class is mapped to a database table representing court reservations.
+ * Each reservation includes an ID, a reference to the court being reserved, a reference to the user making the reservation,
+ * the start and end times of the reservation, whether the reservation is for doubles, the total price of the reservation,
+ * and a flag to indicate if the reservation is deleted (soft deletion).
+ *
+ * The class implements the `BaseEntity` interface to ensure that it has an ID and deletion status.
+ * The `@SQLRestriction` annotation ensures that only non-deleted reservations are retrieved from the database.
+ */
 @Entity
 @SQLRestriction("deleted = false")
 public class Reservation implements BaseEntity{

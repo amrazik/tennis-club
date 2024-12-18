@@ -3,6 +3,16 @@ package com.amrazik.tennisclub.data.model;
 import jakarta.persistence.*;
 import org.hibernate.annotations.SQLRestriction;
 
+/**
+ * Represents a tennis court entity in the system.
+ *
+ * The `Court` class is mapped to a database table representing tennis courts.
+ * Each court has a unique identifier, a name, and is associated with a surface type.
+ * The court also includes a flag to mark whether the court is deleted or not (soft deletion).
+ *
+ * The class implements the `BaseEntity` interface, ensuring that it has an ID and deletion status.
+ * The `@SQLRestriction` annotation ensures that only non-deleted courts are retrieved from the database.
+ */
 @Entity
 @SQLRestriction("deleted = false")
 public class Court implements BaseEntity {

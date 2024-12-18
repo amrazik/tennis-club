@@ -1,17 +1,25 @@
 package com.amrazik.tennisclub.data.DTO;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.time.LocalDateTime;
 
+/**
+ * Data Transfer Object (DTO) for creating or updating reservations.
+ *
+ * This class is used to transfer reservation data between the client and server layers.
+ * It includes details such as the court ID, user information, reservation timings,
+ * and whether the reservation is for a doubles match.
+ */
 public class ReservationCreateDTO {
+
     private Long id;
     private Long courtId;
     private String userName;
     private String phoneNumber;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
+
     @JsonProperty("isDoubles")
     private boolean isDoubles;
 

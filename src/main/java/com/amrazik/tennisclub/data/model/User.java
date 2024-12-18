@@ -3,6 +3,16 @@ package com.amrazik.tennisclub.data.model;
 import jakarta.persistence.*;
 import org.hibernate.annotations.SQLRestriction;
 
+
+/**
+ * Represents a user in the system.
+ *
+ * The `User` class maps to a database entity that holds information about a user, including their name, phone number,
+ * and deletion status. The class implements the `BaseEntity` interface to ensure it has an ID and a deletion flag.
+ *
+ * The `phoneNumber` field is unique, ensuring that no two users can have the same phone number. The class is annotated
+ * with `@SQLRestriction` to ensure that only non-deleted users are retrieved from the database.
+ */
 @Entity
 @Table(name = "\"user\"")
 @SQLRestriction("deleted = false")
