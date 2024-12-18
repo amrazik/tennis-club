@@ -9,7 +9,6 @@ import com.amrazik.tennisclub.data.model.User;
 import com.amrazik.tennisclub.data.repository.CourtRepository;
 import com.amrazik.tennisclub.data.repository.ReservationRepository;
 import com.amrazik.tennisclub.data.repository.SurfaceRepository;
-import com.amrazik.tennisclub.data.repository.UserRepository;
 import com.amrazik.tennisclub.mapper.ReservationMapper;
 import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.Test;

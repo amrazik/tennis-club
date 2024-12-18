@@ -8,4 +8,5 @@ public interface MyRepository<T> {
     List<T> findAll();
     T update(T t);
     void delete(Long id);
+    void deleteAll();
 }

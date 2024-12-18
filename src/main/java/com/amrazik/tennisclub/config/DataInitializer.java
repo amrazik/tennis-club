@@ -26,7 +26,6 @@ public class DataInitializer implements CommandLineRunner {
     public DataInitializer(SurfaceRepository surfaceRepository, CourtRepository courtRepository, UserRepository userRepository) {
         this.surfaceRepository = surfaceRepository;
         this.courtRepository = courtRepository;
-        this.userRepository = userRepository;
     }
 
     @Override
